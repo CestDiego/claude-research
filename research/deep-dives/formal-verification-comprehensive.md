@@ -909,31 +909,173 @@ Still not 99.99%, but **far better** than unconstrained LLM (80-90%).
 
 ---
 
-## References
+## References and Citations
 
-### Key Papers (2024-2025)
+### Academic Papers
 
-1. **Natural Hoare Logic:** arXiv:2103.05779
-2. **LLMs for Formal Verification:** arXiv:2507.04857
-3. **Dafny as Verification-Aware IL:** POPL 2025
-4. **DafnyBench:** arXiv:2406.08467
-5. **VerMCTS:** arXiv:2402.08147
-6. **PropertyGPT:** NDSS 2025
-7. **Extracting Formal Specs from Docs:** arXiv:2504.01294
-8. **Vericoding Benchmark:** arXiv:2509.22908
-9. **Constrained Generation (SGLang):** LMSYS Blog 2024
-10. **Grammar-Based Decoding:** Multiple sources (Outlines, Guidance, llama.cpp)
+[1] **Natural Hoare Logic: Towards formal verification of programs from logical forms of natural language specifications**
+- arXiv:2103.05779
+- URL: https://arxiv.org/abs/2103.05779
+- Year: 2021
+- Cited for: Hoare logic extraction from natural language
 
-### Tools
+[2] **Supporting Software Formal Verification with Large Language Models: An Experimental Study**
+- arXiv:2507.04857
+- URL: https://arxiv.org/html/2507.04857v1
+- Year: 2024
+- Cited for: LLM-based formal verification approaches
 
-- **Dafny:** https://dafny.org/
-- **Coq:** https://coq.inria.fr/
-- **Isabelle:** https://isabelle.in.tum.de/
-- **SPIN:** http://spinroot.com/
-- **NuSMV:** http://nusmv.fbk.eu/
-- **Outlines:** https://github.com/outlines-dev/outlines
-- **Guidance:** https://github.com/microsoft/guidance
-- **SGLang:** https://github.com/sgl-project/sglang
+[3] **Dafny as Verification-Aware Intermediate Language for Code Generation**
+- POPL 2025 (Dafny Workshop)
+- arXiv:2501.06283
+- URL: https://popl25.sigplan.org/details/dafny-2025-papers/11/
+- URL: https://arxiv.org/abs/2501.06283
+- Year: 2025
+- Cited for: Using Dafny as intermediate language for verified code generation
+
+[4] **DafnyBench: A Benchmark for Formal Software Verification**
+- arXiv:2406.08467
+- URL: https://arxiv.org/html/2406.08467v1
+- Year: 2024
+- Cited for: Benchmark results (750 programs, 53K LOC, 68% GPT-4 success rate)
+
+[5] **dafny-annotator: AI-Assisted Verification of Dafny Programs**
+- arXiv:2411.15143
+- URL: https://arxiv.org/html/2411.15143v1
+- Year: 2024
+- Cited for: Fine-tuned LLaMA 8B achieving 50.6% annotation success
+
+[6] **VerMCTS: Synthesizing Multi-Step Programs using a Verifier, a Large Language Model, and Tree Search**
+- arXiv:2402.08147
+- URL: https://arxiv.org/html/2402.08147
+- Year: 2024
+- Cited for: 30%+ improvement using MCTS + LLM + verifier
+
+[7] **A benchmark for vericoding: formally verified program synthesis**
+- arXiv:2509.22908
+- URL: https://arxiv.org/html/2509.22908
+- Year: 2024
+- Cited for: Vericoding benchmark (82% Dafny success rate)
+
+[8] **PropertyGPT: LLM-driven Formal Verification**
+- NDSS 2025
+- URL: https://www.ndss-symposium.org/wp-content/uploads/2025-1357-paper.pdf
+- Year: 2025
+- Cited for: Automated property generation for smart contracts
+
+[9] **Extracting Formal Specifications from Documents Using LLMs for Automated Testing**
+- arXiv:2504.01294
+- URL: https://arxiv.org/html/2504.01294v1
+- Year: 2024
+- Cited for: Two-stage LLM process for temporal logic extraction (85-90% annotation accuracy)
+
+[10] **Formal Verification of Legal Contracts: A Translation-based Approach**
+- arXiv:2509.20421
+- URL: https://arxiv.org/html/2509.20421
+- Year: 2024
+- Cited for: Stipula DSL with formal semantics
+
+[11] **Extracting Formal Smart-Contract Specifications from Natural Language with LLMs**
+- Springer 2024
+- URL: https://link.springer.com/chapter/10.1007/978-3-031-71261-6_7
+- Year: 2024
+- Cited for: LLM-based specification extraction (DbC-GPT)
+
+[12] **Fast JSON Decoding for Local LLMs with Compressed Finite State Machine**
+- LMSYS Blog
+- URL: https://lmsys.org/blog/2024-02-05-compressed-fsm/
+- Year: 2024
+- Cited for: SGLang's compressed FSM technique (2x faster latency, 2.5x throughput)
+
+[13] **Leveraging LLMs for Program Verification**
+- FMCAD 2024
+- URL: https://repositum.tuwien.at/bitstream/20.500.12708/200783/1/Kamath-2024-Leveraging%20LLMs%20for%20Program%20Verification-vor.pdf
+- Year: 2024
+- Cited for: Loop invariant generation with LLMs
+
+[14] **Evaluating the Ability of Large Language Models to Generate Verifiable Specifications in VeriFast**
+- arXiv:2411.02318
+- URL: https://arxiv.org/html/2411.02318v1
+- Year: 2024
+- Cited for: GPT models generating separation logic specifications
+
+### Formal Methods Resources
+
+[15] **Software Foundations - Hoare Logic**
+- University of Pennsylvania / Cornell
+- URL: https://softwarefoundations.cis.upenn.edu/plf-current/Hoare.html
+- URL: https://www.cs.cornell.edu/courses/cs4160/2020sp/sf/plf/terse/Hoare.html
+- Cited for: Hoare logic fundamentals
+
+[16] **Linear Temporal Logic**
+- Wikipedia: https://en.wikipedia.org/wiki/Linear_temporal_logic
+- Cited for: LTL operators and semantics
+
+[17] **Computation Tree Logic**
+- Wikipedia: https://en.wikipedia.org/wiki/Computation_tree_logic
+- Cited for: CTL branching time logic
+
+[18] **Model Checking Linear Temporal Logic Formulas**
+- CMU Course Materials
+- URL: https://www.cs.cmu.edu/~emc/15817-f09/lecture2.pdf
+- URL: https://www.cs.cmu.edu/~emc/15414-s14/lecture/ModelChecking.pdf
+- Cited for: Model checking fundamentals
+
+### Tools and Frameworks
+
+[19] **Dafny Programming Language**
+- Official Site: https://dafny.org/
+- GitHub: https://github.com/dafny-lang/dafny
+- Cited for: Verification-aware programming language
+
+[20] **Coq Proof Assistant**
+- Official Site: https://coq.inria.fr/
+- Cited for: Interactive theorem proving
+
+[21] **Isabelle Proof Assistant**
+- Official Site: https://isabelle.in.tum.de/
+- Cited for: Generic proof assistant with Sledgehammer
+
+[22] **SPIN Model Checker**
+- Official Site: http://spinroot.com/
+- Cited for: LTL model checking
+
+[23] **NuSMV Model Checker**
+- Official Site: http://nusmv.fbk.eu/
+- Cited for: Symbolic model checking
+
+[24] **Outlines - Structured Generation Library**
+- GitHub: https://github.com/outlines-dev/outlines
+- Cited for: Grammar-based constrained generation
+
+[25] **Guidance - Microsoft Constrained Generation Framework**
+- GitHub: https://github.com/microsoft/guidance
+- Cited for: Constrained LLM generation
+
+[26] **SGLang - Structured Generation Language**
+- GitHub: https://github.com/sgl-project/sglang
+- Cited for: High-performance structured generation
+
+[27] **llama.cpp**
+- GitHub: https://github.com/ggerganov/llama.cpp
+- Cited for: LLM inference with grammar support
+
+### Industry Resources
+
+[28] **Structured Output Generation in LLMs: JSON Schema and Grammar-Based Decoding**
+- Author: Emre Karatas (Medium)
+- URL: https://medium.com/@emrekaratas-ai/structured-output-generation-in-llms-json-schema-and-grammar-based-decoding-6a5c58b698a6
+- Year: 2024
+- Cited for: Technical overview of constrained generation
+
+[29] **NVIDIA NIM Structured Generation Documentation**
+- URL: https://docs.nvidia.com/nim/large-language-models/latest/structured-generation.html
+- Year: 2024
+- Cited for: Production implementation details
+
+### Related
+
+For complete bibliography of all 85+ sources, see: `../BIBLIOGRAPHY.md`
 
 ---
 
